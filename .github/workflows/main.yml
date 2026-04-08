@@ -1,0 +1,11 @@
+name: CI Pipeline
+
+on: 
+  push:
+    branches: [ main ]
+
+jobs:
+  job_id:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "I am on the main branch"
