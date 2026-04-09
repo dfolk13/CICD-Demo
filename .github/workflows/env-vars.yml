@@ -9,6 +9,13 @@ on:
   workflow_dispatch:
 
 jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print stage variable
+        run: echo "Stage = $STAGE"
+        env:
+          STAGE: test
   example:
     runs-on: ubuntu-latest
     steps:
