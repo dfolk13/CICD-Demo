@@ -1,0 +1,15 @@
+env:
+  APP_ENV: development
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "App environment is $APP_ENV"
